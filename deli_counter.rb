@@ -1,4 +1,5 @@
 # Write your code here.
+require "pry"
 def line(people) 
     position = []
     if people.empty? 
@@ -12,7 +13,6 @@ def line(people)
 end
 
 
-# if else statement.  Else should be "the line is currently empty"
 def take_a_number(katz_deli, new_person)
     katz_deli << new_person
     puts "Welcome, #{new_person}. You are number #{katz_deli.length} in line."
@@ -26,7 +26,6 @@ end
 
 
 def now_serving(other_deli)  
-    new_line = [] 
     if other_deli.empty?
         puts "There is nobody waiting to be served!"
     else
